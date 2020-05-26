@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" name="asunto" required></textarea> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    
+     <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Editor summer -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.js"></script>
+    
+  
+  
+
+    <title>Nuevo Ticket</title>
+    <link rel="shortcut icon" href="asset/img/favicon.png"/>
+   
+  </head>
+  <body>
+       <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="asset/img/logo.png" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                aria-labelledby="navbarDropdownMenuLink-333">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    
+    <!-- contenedor -->
+    <div class="container">
+        <div style="height: 50px">
+            <div class="h-100 d-inline-block" style="width: 120px"></div>
+        </div>
+       
+
+        <div class="row">
+          
+                      
+            <div class="jumbotron">
+                <h1 class="display-2">Crear ticket</h1>
+                <p class="lead">Este es un formulario para crear tickets. Rellene el formulario y envíenos sus dudas.<br></br> Nuestro sistema de soporte responderá lo antes posible.</p>
+                <hr class="my-2"></hr>
+                
+             <!-- formulario -->    
+                <form class="needs-validation" novalidate  action="nuevo-ticket.php" method="post">
+                    
+                    <div class="form-row">
+                      
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Nombre completo</label>
+                        <input type="text" class="form-control" id="validationCustom02" name="nombre" required>
+                        <div class="valid-feedback">
+                          Perfecto!
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustomUsername">E-mail</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" name="email" required>
+                          <div class="invalid-feedback">
+                            Ingrese un correo electronico valido.
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-md-6 mb-3">
+                         <select class="custom-select" name="departamento[]"  required >
+                           <option value="">Departamento</option>
+                           <option value="1">Soporte</option>
+                           <option value="2">Facturación</option>
+                         </select>
+                         <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                         <select class="custom-select" name="proridad[]" required>
+                          <option value="">Prioridad</option>
+                          <option value="1">Baja</option>
+                          <option value="2">Media</option>
+                          <option value="3">Alta</option>
+                         </select>
+                         <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        
+                      <label for="validationTextarea">asunto</label>
+                      <input type="text" id="validationTextarea" placeholder="Required example textarea" name="asunto" requeried >
+                      
+                      <div class="invalid-feedback">
+                       
+                      </div>
+                    
+      
+                </div>
+
+                   
+                    <div class="form-group">
+
+                        
+                          <label for="validationTextarea">Contenido</label>
+                          
+                          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" name="contenido" required></textarea>
+                          <div class="invalid-feedback">
+                            Porfavor cuentenos su inquietud.
+                          </div>
+                        
+          
+                    </div>
+
+                  
+
+                    <div class="form-group row">
+
+                                     
+                        <div class="form-check">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" name="terminos" required>
+                                <label class="custom-control-label" for="customSwitch1">Aceptar los términos y condiciones</label>
+                                <div class="invalid-feedback">
+                                 You must agree before submitting.
+                                </div>
+                            </div>
+                        
+                      
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                            
+                      <button type="submit" class="btn btn-secondary btn-lg btn-block">CREAR TICKET</button>
+                            
+                    </div>
+    
+                    
+                </form>
+            </div>
+       
+        </div>
+    </div>
+    
+      <script>
+        $('#summernote').summernote({
+        height: 200,                 // set editor height
+        minHeight: null,             // set minimum height of editor
+        maxHeight: null,             // set maximum height of editor
+        focus: true                  // set focus to editable area after initializing summernote
+        });
+       </script>
+    
+ 
+
+   
+    <!-- Fuentes de Iconos -->
+    <script src="https://kit.fontawesome.com/be7d564f3b.js" crossorigin="anonymous"></script>
+     <!-- editor -->
+    
+    
+    <!-- Optional JavaScript -->
+
+ 
+
+ 
+    <script>
+       // Example starter JavaScript for disabling form submissions if there are invalid fields
+       (function() {
+         'use strict';
+         window.addEventListener('load', function() {
+           // Fetch all the forms we want to apply custom Bootstrap validation styles to
+           var forms = document.getElementsByClassName('needs-validation');
+           // Loop over them and prevent submission
+           var validation = Array.prototype.filter.call(forms, function(form) {
+             form.addEventListener('submit', function(event) {
+               if (form.checkValidity() === false) {
+                 event.preventDefault();
+                 event.stopPropagation();
+               }
+               form.classList.add('was-validated');
+             }, false);
+           });
+         }, false);
+       })();
+       </script>
+        
+
+     </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+  </body>
+</html>
